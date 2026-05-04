@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TOKO SEMBAKO DAN 27 - Digital Freshness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Work+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#434843",
+                        "on-surface": "#1b1c1c",
+                        "on-error": "#ffffff",
+                        "secondary": "#9b4500",
+                        "on-surface-variant": "#404943",
+                        "on-secondary-fixed-variant": "#763300",
+                        "tertiary-container": "#5b615b",
+                        "on-secondary-fixed": "#331200",
+                        "secondary-fixed": "#ffdbc9",
+                        "primary-container": "#2d6a4f",
+                        "on-tertiary-fixed": "#181d18",
+                        "on-primary-container": "#a8e7c5",
+                        "tertiary-fixed-dim": "#c3c8c1",
+                        "primary-fixed-dim": "#95d4b3",
+                        "surface-bright": "#fbf9f8",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#444944",
+                        "surface-dim": "#dbd9d9",
+                        "surface-container": "#efeded",
+                        "secondary-fixed-dim": "#ffb68d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#f5f3f3",
+                        "surface-tint": "#2c694e",
+                        "primary-fixed": "#b1f0ce",
+                        "on-tertiary-container": "#d7dcd4",
+                        "on-background": "#1b1c1c",
+                        "secondary-container": "#fc8a40",
+                        "outline-variant": "#bfc9c1",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e4e2e2",
+                        "tertiary-fixed": "#dfe4dc",
+                        "surface-variant": "#e4e2e2",
+                        "background": "#fbf9f8",
+                        "primary": "#0f5238",
+                        "on-secondary-container": "#672c00",
+                        "on-primary-fixed": "#002114",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#303030",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "inverse-on-surface": "#f2f0f0",
+                        "surface": "#fbf9f8",
+                        "outline": "#707973",
+                        "inverse-primary": "#95d4b3",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eae8e7"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "sm": "12px",
+                        "xl": "80px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "lg": "48px",
+                        "xs": "4px",
+                        "md": "24px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-caps": ["Work Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "price-tag": ["Work Sans"],
+                        "body-regular": ["Work Sans"],
+                        "product-title": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "display-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "price-tag": ["20px", {"lineHeight": "24px", "fontWeight": "700"}],
+                        "body-regular": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "product-title": ["18px", {"lineHeight": "24px", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .backdrop-blur-lg { backdrop-filter: blur(16px); }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+        @media (max-width: 640px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-regular">
+<!-- TopNavBar -->
+<nav class="bg-emerald-50/90 backdrop-blur-lg dark:bg-slate-950/90 docked full-width top-0 sticky z-50 border-b border-emerald-100/50 dark:border-emerald-900/30 shadow-[0px_4px_20px_rgba(45,106,79,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-lg font-black tracking-tighter text-emerald-900 dark:text-emerald-50 font-headline-md">
+                TOKO SEMBAKO DAN 27
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-emerald-700 dark:text-emerald-400 border-b-2 border-emerald-600 font-bold pb-1 font-['Plus_Jakarta_Sans'] text-sm" href="#">Katalog</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#promo">Promo</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#orders">Pesanan</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-sm font-medium" href="#help">Bantuan</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-emerald-800 dark:text-emerald-400 hover:scale-105 transition-transform duration-200 ease-out">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="text-emerald-800 dark:text-emerald-400 hover:scale-105 transition-transform duration-200 ease-out">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-primary-container text-on-primary-container px-6 py-20 md:py-32">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-on-primary-container text-primary font-label-caps text-label-caps mb-6">FRESH DELIVERY EVERYDAY</span>
+<h1 class="font-display-lg text-display-lg mb-6 text-white">Sembako Lengkap, Harga Tetangga.</h1>
+<p class="font-body-regular text-body-regular mb-8 opacity-90 max-w-md">Nikmati kemudahan belanja kebutuhan harian tanpa ribet. Kualitas premium, stok selalu tersedia, dan kirim langsung ke depan pintu Anda.</p>
+<a class="inline-flex items-center justify-center bg-secondary text-white px-10 py-4 rounded-xl font-bold hover:scale-105 transition-transform shadow-lg" href="#catalog">
+                        Belanja Sekarang
+                    </a>
+</div>
+<div class="hidden md:block relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-full blur-3xl"></div>
+<img alt="Fresh Groceries" class="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-2xl" data-alt="A lush and vibrant overhead shot of a premium grocery basket filled with fresh produce, organic vegetables, and essential household goods. The lighting is bright and warm, mimicking natural morning sunlight in a modern Indonesian kitchen. The color palette is dominated by deep greens and earthy tones, reflecting a brand identity of digital freshness and community trust." src="https://lh3.googleusercontent.com/aida/ADBb0uhdsG4Z_iqPV8szhdOAXqrB2l7LY4JOVPMZlnF5mvuZSPvaUr7WiLoiOqidN0RxTcEIUn6adiaVkb-MMyE9bjHQ7ztnWLdqJmib_-uG7iVcGpbBRji5XmIOlvxlupAvf8-RZID3ta6pfTihko43LUrcG6d35hVtOilbJlnZpE5S1VKQC53ouYSCw5o1OZX1QQgO-43uMWq3I1T_C6eqJU6j2KAFlbiD1rVMbQ8aBniCEbkYCZ-VZToIeJSG2tH3B0t6LtLWm3UG"/>
+</div>
+</div>
+</section>
+<!-- Product Catalog -->
+<section class="max-w-7xl mx-auto px-6 py-16" id="catalog">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Katalog Produk</h2>
+<p class="text-on-surface-variant font-body-regular">Pilihan terbaik untuk kebutuhan keluarga Anda.</p>
+</div>
+<div class="hidden md:flex gap-4">
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface font-label-caps text-label-caps hover:bg-surface-variant transition-colors">SEMUA</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface font-label-caps text-label-caps hover:bg-surface-variant transition-colors">SEMBAKO</button>
+<button class="px-6 py-2 rounded-full border border-outline text-on-surface font-label-caps text-label-caps hover:bg-surface-variant transition-colors">KEBERSIHAN</button>
+</div>
+</div>
+<div class="product-grid gap-6">
+<!-- Product 1: Beras Premium -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Beras Premium" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A macro photograph of high-quality white jasmine rice spilling from a burlap sack. The lighting is soft and even, highlighting the translucent texture of the grains. The background is a clean, minimalist kitchen setting with warm wooden accents, maintaining a professional and fresh aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaq2Ip0UpGg6ZRvMlHze2mBIVFZl8fYBil4TG6JNIXc-vLY3A7gUsnkewuVLt1Nvc7x22GBQbNvpreai0oF9ReUPKeqLB8RGAqM8i2JduDOfmmbTaGjaUJDWtp1tV_7PbxRyuVVSP5aGOlLYRQ17YoYzA3ytjxccHkJuevlcQlFLg1AlK9A-eKMbgOGiA_AvwPUQdh4Kb1Yp-GiXVm62tjpxH7NGFsYbCtLcvomQE5iMfVTi1AbHdxgrus4YjzZexZGBsBee0S-Ts"/>
+<span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-sm text-xs font-bold">STOK ADA</span>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Beras Premium 5kg</h3>
+<p class="text-sm text-on-surface-variant mb-4">Pulen &amp; Wangi</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 68.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Beras Premium 5kg', 68000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 2: Minyak Goreng -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Minyak Goreng" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A clear plastic bottle of golden vegetable oil glowing under bright studio lights. The oil reflects a warm, amber light, emphasizing its purity and clarity. Set against a soft-focus background of a modern grocery shelf, creating a sense of freshness and commercial quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCneoupuKHFHnshMXIClxh31qYOiY1QD6-rdF7CbqWbTA3sQRtWNm1UbL5cFd71zXfjEtFtEfsCes-3np4HwZbuJ6W2n0QFXjF-vh_-mA4bhjY6LWzU0L8W6kxWtbKZTK6alz29W5nqQ9DSkzDY41J5yjygFiyLGmFeuG4gSfOQPZFZzTsmQ4tLAMcHzuRtEouIFsyH5BbWE5fqDzcn124CohhU7wi0cEyh8W17FegSIdrsssf1L2kPpBdwbD0YhWZiq8laMEqYCHI"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Minyak Goreng 2L</h3>
+<p class="text-sm text-on-surface-variant mb-4">Minyak Kelapa Sawit</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 34.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Minyak Goreng 2L', 34500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 3: Telur Ayam -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Telur Ayam" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A dozen fresh brown chicken eggs arranged neatly in a rustic cardboard carton. The lighting is soft and top-down, showing off the smooth texture of the shells. The aesthetic is organic and farm-fresh, perfectly aligning with a digital marketplace for daily essentials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr1ahd1McffDz5c_nDYTJcDHmEB7ujrNtIVGRk9jg8GJlAHfLFW9no_k99HDyn32hCqGZVo23D9bpay47REk5AiYpJ3j5imSvyz8_jlf6UQXu3WAHORPJh-Ks4AEShudgbUW3aR0VNYHHKb4L9eyvvShYdgy4pYGAlNsWTCy1EqO_4gJ68vXJGLp5SmdIzVYEYM-gODlMkDevPquoEKcpRYQgr2XRs5Hcc2xQt4Dt9TfN5pqDy27Bjp9wzUumDLEgr2aBDTaVPgQY"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Telur Ayam 1kg</h3>
+<p class="text-sm text-on-surface-variant mb-4">Segar &amp; Berkualitas</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 28.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Telur Ayam 1kg', 28000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 4: Gula Pasir -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Gula Pasir" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A pristine white heap of refined granulated sugar on a dark stone surface. The high contrast highlights the sparkling crystal structure of the sugar. Studio lighting creates deep shadows and bright highlights, giving the product a premium, clean look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5_99f60qIV9jy38J1c1wakIU3PU54QlTwAVZp0yUInNN07LOpCvrYTNL4wHfjsCu91O1U0oEQtWqOCSadlyQW8Pi11HfcO3mJNaJnbTwyHzx7zHr8MWCp7Iw6m9npes7iSg-_MGAxQdOxuq2xZFJuBGjL0OegMktWuaUWkt3y3d-KCKaJZtEyJThi_D5jktB3etqwcA74rv-6Tg9WkfP-mVrubmSRLSp7fy-jTydRDyyxUqOAcx12dOiFjw2d2gyQL6pfOFYtwJs"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Gula Pasir 1kg</h3>
+<p class="text-sm text-on-surface-variant mb-4">Manis Alami</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 16.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Gula Pasir 1kg', 16500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 5: Tepung Terigu -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Tepung Terigu" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A fine dusting of white all-purpose flour scattered on a dark wooden baking table. A wooden scoop sits in the foreground, suggesting a homemade and tactile culinary experience. The atmosphere is warm and inviting, emphasizing the quality of essential ingredients." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAljJllP2U5D1HF_sSYJmckw37wpfLmsPw_uXlaG-ERt09NCnqkf-7pQ-rp4dtXKeDtJ0rv2_AqRcn-DTuUBGhQF12EEOFmday5CbpAsmzxA71ddYttIenN0zpR2Vn_8ylg7xW2rehKr8R-uCJZ94gziQgDUsZymY3yWjwAIlA5YWDWXTYuWzAvP5IlOqNm3YelrHJtOgv-HdgQ18rANpmdGeZ6mFhFRIABFu-fT-owk7F6Imjsl6q2G_4ddJ1SK5pg2qD-Z0-wDEc"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Tepung Terigu 1kg</h3>
+<p class="text-sm text-on-surface-variant mb-4">Serbaguna Premium</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 12.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Tepung Terigu 1kg', 12000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 6: Mie Instan -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Mie Instan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A colorful and appetizing display of instant noodles in a ceramic bowl, garnished with fresh herbs and spices. The packaging design elements are vibrant and energetic, shot with a shallow depth of field to make the meal look enticing and ready to eat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvYt0_VCfm13Q-Cr9aPD4WWWrTvWsS83gMzMW03h24q9X5lwRM28XdD0rb-QtdCZLrWxXlz0xru2I6zg8RdSCpQr0sLu0gUTDRCbRqJ9oZtv1gdci38kvWy2u1OQpwaji2-GyZvMExtGnmeNmtRC-PBp3xN1k4MvJrc8aOVqJws568F4nYMtsAWxBRyfsZ6Kh89f5ZFjqZytiQMNBvcZnzH5wp9yzTgls-9atFmtRIdYWCbfKrrN48v_KE_Bdjhl10WHgG-Ba4wI4"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Mie Instan (5 Pcs)</h3>
+<p class="text-sm text-on-surface-variant mb-4">Paket Hemat</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 15.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Mie Instan (5 Pcs)', 15000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 7: Susu UHT -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Susu UHT" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A carton of fresh whole milk splashing into a clear glass. The lighting is bright and high-key, creating a refreshing and wholesome mood. The pristine white color of the milk is set against a soft blue background, representing health and purity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99zZxSbHr6VXSCE-K4X6BDkoBICU3aL5KclswoW15HoxDKrlatm1yI-DDTD27v-hkWJ83CgtC7-2acYm1Foyil_CVoEKDuANXDMpFn95QUoVaMf81rTzvg3RWceLhxu6t_PRC5-L5enHhhiLZBk2q5JEwtyytGa7CTwrNUa8Xheoy4CaWeYn5IhdpRtU2yqNvQYzywPMe9UoZ3PgzP2NlOUF1DnaS8QbzN2UdsxmGmUnOxi7F-6iXd_MnfPsDoTAqjOhWY-sNAMg"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Susu UHT 1L</h3>
+<p class="text-sm text-on-surface-variant mb-4">Full Cream</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 18.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Susu UHT 1L', 18500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 8: Teh Celup -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Teh Celup" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of a steaming cup of amber-colored tea with a tea bag tag hanging over the rim. Soft steam rises elegantly against a dark, cozy background. The lighting is warm and directional, evoking a peaceful afternoon tea moment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmZhxSzFOQkrXxe62H4GfA8D-ei9T9Jsh50FkNeiWr3CGLB-cMCSt1fQNMy6UAOxDV4QyTdAlkei-eFX4EyarYm2RcMl3J4PIF1QR_TV9rQs565KYW43-tCWy-OQa0Fx8_btP3D__T8u3K3WfoPW8ptobvjAtlRlkIg-u4ZYa99zbmxV4oi-aeKjWYasiCecbVcMQDI_aed5JZXLAr73icBMejH45V2u7OD_ayVDOhSD075GjoSusRpgYOXtxhcmyYKTYtspp1d8M"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Teh Celup (25s)</h3>
+<p class="text-sm text-on-surface-variant mb-4">Aroma Melati</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 10.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Teh Celup (25s)', 10000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Repeat Pattern for more products -->
+<!-- Product 9: Kopi Bubuk -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Kopi Bubuk" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Finely ground dark roasted coffee beans in a wooden bowl. The texture of the grounds is rich and visible, with a few whole coffee beans scattered around. The lighting is moody and sophisticated, highlighting the deep chocolatey tones of the coffee." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgi1rUaFvo8fw83-JzoK_Zh4QCmeT1q-LdFo_TwwsY9CFs4B7r-a4v2B5SNQAwNyzZJL7gFebm8p3OQg216CFeV7EIrTyJ73dVNCY16vtTfoU0c5vhoL4v_lZYIjPMtKLhkWYc8V7j19IsPt3gdEJVD344JTKC5WDrfx1JHorFUW6ySAatB3MGpkDJ268xF54f6M1a-Q-0F8709Yth_Vo5vgrtGQhcEgPt2anO1Nxx9XSJtOd_TARlsb5UKiHIqUgKtJAHr11zVQo"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Kopi Bubuk 165g</h3>
+<p class="text-sm text-on-surface-variant mb-4">Arabika Blend</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 14.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Kopi Bubuk 165g', 14000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 10: Garam Yodium -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Garam Yodium" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Coarse white sea salt crystals in a simple glass jar on a minimalist white surface. The lighting is clean and clinical, emphasizing the purity and mineral quality of the salt. A very modern, high-end food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzHTrss3V78tFE2A7BOHJrNpt4c7G9VOUodltRWJQj_rCQzqNsedE96nJ5shj9eTq4aUznFWb7iMfRaxHDQ9ApJ_SXNaruoGSqysvD6LnS9skE9QoOo2GkcItGef-d49-F4I7F_8IiE3ABBxde54zTMXBkXqTfkB4jDf3xji241iM4u1MsvYUrNjUVUvxYe0gDoHLiqOClI6fUXDMCQzCpaUA0mYhFviSYzdw7N2GU4JL3TcZFPMi6MIUS621YRpS30ye2XJf_VXc"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Garam Yodium 500g</h3>
+<p class="text-sm text-on-surface-variant mb-4">Garam Meja Halus</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 5.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Garam Yodium 500g', 5500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 11: Deterjen Cair -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Deterjen Cair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A modern, sleek blue plastic bottle of liquid laundry detergent. The bottle has water droplets on it, suggesting cleanliness and freshness. The background is a bright, airy laundry room with white tiles, conveying a sense of hygiene and household care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlN3hx78wkm3pwtB7tkiI8YkjJ3KNRzlM3dRXXryAPRqUjcZjwJKvE58S02INVPZGizkK_0eIhsmc7JTL__SBdBWaZDrTnTu5cyxrGWhJN_CW8AM5P-Vh6XLwxXlsOuQt8YEUQV5WM94VfTJduSjwv0glpIjMe8V8tiM-pXBNTbAFUL2nDVXIYEtwmgtGkEpsMDkjdt9SJEPFmbdOZIEy1dsGb0WgImL8g2vuORCMBjp-ALvzy4nyx-18CdjamnqOlj9CiM8j-d1c"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Deterjen Cair 800ml</h3>
+<p class="text-sm text-on-surface-variant mb-4">Bersih &amp; Harum</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 22.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Deterjen Cair 800ml', 22000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 12: Kecap Manis -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Kecap Manis" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Thick, dark sweet soy sauce being poured from a traditional glass bottle into a small dipping bowl. The rich, glossy texture of the sauce is captured with sharp detail. The setting is a rustic kitchen table, creating an authentic culinary feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUwn8NAuOCLdrS864GiUIT5IpyDdDn_1xjZR3nFZbJNzTe8NQHu779mxur26AfzonUDSu1y4ejIdsviDpU1K6-2m7QUJQ8sjho4TPkID8dXLK2Wgd9HC9oJ0X8AgeF7nJ4LctZ_uwNslQYN_ItbpHUoHN0_p-cy-V3nGhsghbJpgsxypqpnHhF4TE-8BopVD7DSb8g5dBx_HdsAYVBKI9bE3c9-4-Eql7br6yx8w-bapG28wJz7w117bNJotukFrVdB0JMeEH5gTc"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Kecap Manis 550ml</h3>
+<p class="text-sm text-on-surface-variant mb-4">Kedelai Hitam Pilihan</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 20.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Kecap Manis 550ml', 20000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 13: Saus Sambal -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Saus Sambal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A vibrant red bottle of chili sauce surrounded by fresh red chilies and garlic cloves. The lighting is intense and warm, matching the spicy nature of the product. The composition is dynamic, suggesting bold flavor and freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9B9I0XfNaNf1jsuqUiLxu_sseyzhgp-KYqUaMkbsAkMG_I3c1vZwTS4K_hYGPvaNVGN9hg_Zueec6n3lkERVcFC51VB3QTjhv7c0feuj69xdHf6bgzOT97UT6OmO10eaVfj7yUpg4iKdW-Ev74gkF4GGyzEInBdM2fjYvF2lJzDkCWkQRYvzzgeJckIzPk-JnaSOjb986FgYkLKGi0uJc1zFf8-h03heXBO2kB9q2VRjNwHV5Bm6CsLzlO38g4tRFoXW1Pb2o3As"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Saus Sambal 335ml</h3>
+<p class="text-sm text-on-surface-variant mb-4">Pedas Mantap</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 15.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Saus Sambal 335ml', 15500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 14: Margarine -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Margarine" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A swirl of creamy yellow margarine on a slice of golden toasted bread. The lighting is soft and buttery, highlighting the smooth and spreadable texture of the product. A warm, homey breakfast scene that feels wholesome and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh4NXwUVnVVhVX7zMkNooYBXw1Rh3xEKiM3eN5QrMfk_4OLJmqToWC02oBzrrjOwYOdIf67fx9-ij3NwGOrqtWULfUI-cOcGGO_Y1cNjSENHDpSwWIyjQ1QIn4VlcP4iuuKqeZB0yYxvB95ggQ5YDGJchCMNOG_LAMsm8pE7wLXTLKfdyfz6KNcBhm93WIImaCF1gyOIJfIO_lsz4R9oHlzNEq7JqjTtgAY5AeFApsQ12fGa8IJILEqK01q_IzFezLw5kp_iT9N48"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Margarine 200g</h3>
+<p class="text-sm text-on-surface-variant mb-4">Bernutrisi &amp; Lembut</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 8.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Margarine 200g', 8500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 15: Kacang Hijau -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Kacang Hijau" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A bowl of bright green mung beans on a light wooden table. The seeds are uniform in size and color, showing high quality. The lighting is bright and natural, giving a sense of healthy, earth-grown goodness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl-JME_Yc2_K6gOcVLsPbk9_w6SZfGTuFjes6wZPIc1XGGnorvzl5L_tonRLs7XZBiJK-bEAMykIEZ4pN76jAI-9Eh-eXrEscQfmC_M6Qukb2PDJlgZRuqq7u4oLxqcmXvif7tXAOoO3F_Kgq9lP6TQ5J-b_HKC_4V1ERcUhN-vMjz6pq9xv76YzcVSUaTCS3pE852S2smnydm7anoTiTfz4APuGsQbn2ep_NlU3hy7t4lkqoUAT4bEYumfaJqmnfM_KfSaCVuc8A"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Kacang Hijau 500g</h3>
+<p class="text-sm text-on-surface-variant mb-4">Pilihan Terbaik</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 13.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Kacang Hijau 500g', 13000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 16: Paket Bumbu Dapur -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Paket Bumbu Dapur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="An assortment of fresh traditional Indonesian spices including shallots, garlic, ginger, and turmeric arranged on a banana leaf. The colors are rich and vibrant, showcasing the diversity and freshness of local kitchen essentials. High-key lighting emphasizes the textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_1TU6ZvijM7NIvhsyWvIXIQWrokbexuHOJo15YUC-ODTPSIU3KmUYz8AmqOZbHXTqJKHc1FcEEom8d1m0mtT1kmtAvCzMF3mR_LbX0iBJuFljMv9kmA5XuXFEGxUxipFQ2lLqT9w6OqVyIC0ajjkN9o-8s9pNFCDYUbw9Alb7yGD_cQ4ynGEjCh32TGemDgkyEqIX3V5vtubS_vs2kldnCC8qQHLq51ozKTqajfT93xDQaZKHYELnTEFHsohSeCZIdbgZ7EkK_xQ"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Paket Bumbu Dapur</h3>
+<p class="text-sm text-on-surface-variant mb-4">Lengkap &amp; Segar</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 10.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Paket Bumbu Dapur', 10000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 17: Pembersih Lantai -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Pembersih Lantai" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A brightly colored bottle of floor cleaner on a shining, clean marble floor reflecting soft light. The image conveys a sense of extreme hygiene and a fresh, pleasant scent. The aesthetic is clean, minimalist, and very professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5-mbHPMWRjCoxKwnHRgAeFe2kQyKbO5zq8kzyqg-G1IplgEhdVo5XWgxc25EXiYQsRT9XSeqpxGeqDd7WqmbikHLdbegzfBP3Pky2ujMCK4xQ3XtdMZNoOFFGvhBK0s1dLrebUPNp5bXYTvx_OAQ9p1Z6fxh4NQk2O0D578-zPRENGBbJKyP8-nvaJZHW6bn57-GqjL-nubF3UOeWTKF287xyLcFIld_RnaI47bETMfDnEehdIDNz-K28tThlX3NgU2u5BmsrKZ8"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Pembersih Lantai 750ml</h3>
+<p class="text-sm text-on-surface-variant mb-4">Wangi Pinus Segar</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 15.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Pembersih Lantai 750ml', 15000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 18: Tissue Wajah -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Tissue Wajah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A soft, white stack of facial tissues being pulled from a modern, minimalist box. The lighting is extremely soft, highlighting the delicate and fluffy texture of the paper. The background is a clean, white-themed room, emphasizing purity and softness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvSK4fQZQlGQmzI7NNIjYlCq7ibSgkTwTf7aDbnIbtal1feLIjwQ4adZn1802eoS1OMFPM8kK0qFQPf-w-fCMgumD4fFEe3-t1x5IGzOOWBlJ0Rh2KcOMIa7kZeIAvxDtGdS2TXoLBHNCxCsqLhXRlwNd6L2DmjEs3RDoWFGYz14SYapshbBa4-5RkcdCuczGXgYyWO8Ihn92vF_ffvKSwtyLvrozEWF5_7K0MXqTDaDlEdycEWKBRx3L3JhE14Zwp_q1e85npZN4"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Tissue Wajah 250s</h3>
+<p class="text-sm text-on-surface-variant mb-4">Lembut &amp; Higienis</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 12.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Tissue Wajah 250s', 12500)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 19: Minyak Telon -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Minyak Telon" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A small, child-friendly bottle of herbal baby oil sitting next to a soft knitted baby blanket. The lighting is warm and nurturing, creating a gentle and safe atmosphere. The soft-focus background suggests a cozy nursery, emphasizing care and trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPW9rHNvCsI0hOqzKWWzhwrI5ZPw0FK16WbAxiqwIl-w-wt4reCImEICC6FUk_B70qEgzmwfXFB3XytIDFmQOXJMhvmd3rlit5lgl1ZLjeWrfe5eJn1Iw_6JWvSrYkMEMhZvjAvRl5VsLH7byHNJ_LQrNLRzA2HibG-5_k8c57ueUHC2dQtUPmLpdcZxAmoTIAkGWjVgHvCg11GAbynYmRzIpLKn98Xw_bsmhKDrRU-0JTOJBImiRc-iwyLHdH1JcXUv5CS_yQzVo"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Minyak Telon 60ml</h3>
+<p class="text-sm text-on-surface-variant mb-4">Hangat Untuk Bayi</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 18.000</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Minyak Telon 60ml', 18000)">Pesan</button>
+</div>
+</div>
+</div>
+<!-- Product 20: Sabun Mandi -->
+<div class="bg-surface-container-lowest rounded-xl border border-slate-200 overflow-hidden group hover:shadow-xl transition-all duration-300">
+<div class="aspect-square relative overflow-hidden">
+<img alt="Sabun Mandi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Four bars of colorful, artisanal soap stacked neatly on a bamboo soap dish. Water droplets are visible on the surface, suggesting a refreshing bath experience. The lighting is bright and clean, with a focus on natural ingredients and gentle care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjHSNObRN8ZQAuPwtrfhd4bux003xojfM5FxFPIEWtULqTjWIuEHCmzFCwX7AzCnp_aZJ9VvFXSHvJXB61lG8AkzCPzTbX2mxMeBLvhx6k1D-LpJ8mJVJ0-KDRYpq2fAhNqxXa5P2yMFiYVbhaiNS8pDKGM9LKQFABMePpxT3EtirkDwcpuuFCBoQoImhj3TANkt61vxVOgZ7ndmdiELGDoPBMmBwIMi6eC5DWFzzzISK4q1l_bC6MYngUgWrCPYNrMLxG8vM9G0"/>
+</div>
+<div class="p-4">
+<h3 class="font-product-title text-product-title text-on-surface mb-1">Sabun Mandi (4 Pcs)</h3>
+<p class="text-sm text-on-surface-variant mb-4">Anti Bakteri</p>
+<div class="flex items-center justify-between">
+<span class="font-price-tag text-price-tag text-primary">Rp 14.500</span>
+<button class="bg-secondary text-white px-4 py-2 rounded-lg font-bold text-sm hover:opacity-90 active:scale-95 transition-all" onclick="openOrderModal('Sabun Mandi (4 Pcs)', 14500)">Pesan</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 p-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+<div class="md:col-span-1">
+<div class="text-base font-bold text-emerald-900 dark:text-emerald-50 mb-4 font-headline-md">TOKO SEMBAKO DAN 27</div>
+<p class="text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest leading-relaxed">
+                    © 2024 TOKO SEMBAKO DAN 27. Digital Freshness for Your Community.
+                </p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-emerald-800 dark:text-emerald-400 mb-6">MENU</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest" href="tentang kmi.html">Tentang Kami</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest" href="#catalog">Katalog</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest" href="#promo">Promo</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-emerald-800 dark:text-emerald-400 mb-6">BANTUAN</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest" href="https://wa.me/6285816266229">Kontak</a></li>
+<li><a class="text-slate-500 hover:text-emerald-600 transition-colors font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-widest" href="#bantuan">Bantuan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-emerald-800 dark:text-emerald-400 mb-6">SOSIAL MEDIA</h4>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-800 dark:text-emerald-400 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center text-emerald-800 dark:text-emerald-400 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">share</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- Order Modal -->
+<div class="fixed inset-0 z-[100] hidden" id="orderModal">
+<div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeOrderModal()"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden p-8">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md text-on-surface">Pesan Produk</h2>
+<button class="text-on-surface-variant hover:text-error transition-colors" onclick="closeOrderModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form id="orderForm" onsubmit="handleOrderSubmit(event)">
+<input id="modalProductName" type="hidden"/>
+<input id="modalProductPrice" type="hidden"/>
+<div class="space-y-4">
+<div>
+<label class="block font-label-caps text-label-caps mb-2 opacity-70">Nama Produk</label>
+<p class="font-product-title text-product-title text-primary" id="displayProductName"></p>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2 opacity-70">Nama Penerima</label>
+<input class="w-full px-4 py-3 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" id="userName" placeholder="Masukkan nama Anda" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2 opacity-70">Alamat Lengkap</label>
+<textarea class="w-full px-4 py-3 rounded-xl border border-outline focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all h-24" id="userAddress" placeholder="Masukkan alamat pengiriman" required=""></textarea>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps mb-2 opacity-70">Jumlah (Quantity)</label>
+<div class="flex items-center gap-4 bg-surface-container rounded-xl p-2">
+<button class="w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center text-primary font-bold hover:bg-slate-50" onclick="adjustQty(-1)" type="button">-</button>
+<input class="bg-transparent border-none text-center font-price-tag text-price-tag w-full outline-none" id="orderQty" min="1" type="number" value="1"/>
+<button class="w-10 h-10 rounded-lg bg-white shadow-sm flex items-center justify-center text-primary font-bold hover:bg-slate-50" onclick="adjustQty(1)" type="button">+</button>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<button class="w-full bg-secondary text-white py-4 rounded-xl font-bold text-lg hover:opacity-90 shadow-lg flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined">send</span>
+                        Pesan via WhatsApp
+                    </button>
+</div>
+</form>
+</div>
+</div>
+<script>function openOrderModal(name, price) {
+            document.getElementById('orderModal').classList.remove('hidden');
+            document.getElementById('modalProductName').value = name;
+            document.getElementById('modalProductPrice').value = price;
+            document.getElementById('displayProductName').innerText = name;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeOrderModal() {
+            document.getElementById('orderModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function adjustQty(amount) {
+            const qtyInput = document.getElementById('orderQty');
+            let val = parseInt(qtyInput.value) + amount;
+            if (val < 1) val = 1;
+            qtyInput.value = val;
+        }
+
+        function handleOrderSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value;
+            const address = document.getElementById('userAddress').value;
+            const qty = document.getElementById('orderQty').value;
+            const productName = document.getElementById('modalProductName').value;
+            const price = document.getElementById('modalProductPrice').value;
+            const totalPrice = parseInt(price) * parseInt(qty);
+
+            const message = `Halo Toko Sembako Dan 27, saya ingin memesan:\n\nProduk: ${productName}\nJumlah: ${qty}\nTotal Harga: Rp ${totalPrice.toLocaleString('id-ID')}\n\nNama: ${name}\nAlamat: ${address}\n\nTerima kasih.`;
+            const whatsappUrl = `https://wa.me/6285816266229?text=${encodeURIComponent(message)}`;
+            
+            window.location.href = whatsappUrl;
+        }</script>
+</body></html>
